@@ -1,5 +1,6 @@
 body {
-  background-color: #000;
+  background-color: var(--color-black);
+  font-family: var(--font-dm-sans);
 }
 
 /* Seção sidebar inicial */
@@ -13,13 +14,13 @@ body {
 }
 
 .sidebar-nav {
-  background-color: #121212;
+  background-color: var(--bg-sidebar);
   border-radius: 8px;
   padding: 16px 0 0 16px;
 }
 
 .sidebar-nav .logo {
-  background-color: #121212;
+  background-color: var(--bg-sidebar);
   display: flex;
   border-radius: 8px;
   padding: 16px 0 0 16px;
@@ -39,15 +40,14 @@ body {
 }
 
 .sidebar nav ul li a {
-  color: #b3b3b3;
+  color: var(--font-gray);
   text-decoration: none;
   font-weight: 600;
   font-size: 14px;
-  font-family: "DM Sans", sans-serif;
 }
 
 .sidebar nav ul li a:hover {
-  color: #fff;
+  color: var(--color-white);
 }
 
 /* Seção sua biblioteca */
@@ -55,13 +55,13 @@ body {
   position: fixed;
   top: 200px;
   left: 12px;
-  background-color: #121212;
+  background-color: var(--bg-sidebar);
   border-radius: 8px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   padding: 4px 8px;
-  color: #b3b3b3;
+  color: var(--font-gray);
   font-weight: 600;
   font-size: 14px;
   margin-top: 10px;
@@ -75,18 +75,17 @@ body {
 }
 
 .library .library__content:hover {
-  color: #fff;
+  color: var(--color-white);
 }
 
 .library .library__button {
   display: flex;
   margin-right: 10px;
-  color: #b3b3b3;
+  color: var(--font-gray);
   background-color: transparent;
   border: 0;
   font-size: 14px;
   font-weight: 700;
-  font-family: "DM Sans", sans-serif;
   text-align: center;
   text-decoration: none;
   text-transform: none;
@@ -95,7 +94,7 @@ body {
 }
 
 .library .library__button:hover {
-  color: #fff;
+  color: var(--color-white);
 }
 
 .library .library__button .fa {
@@ -116,12 +115,11 @@ body {
   gap: 20px;
   background-color: #242424;
   border-radius: 8px;
-  color: #b3b3b3;
+  color: var(--font-gray);
   font-weight: 600;
   font-size: 14px;
   margin: 8px 0 8px 0;
   padding: 16px 20px;
-  font-family: "DM Sans", sans-serif;
 }
 
 .section-playlist .section-playlist__content {
@@ -131,7 +129,7 @@ body {
 
 .section-playlist__content .text {
   padding-bottom: 14px;
-  color: #fff;
+  color: var(--color-white);
 }
 
 .section-playlist__content .title {
@@ -146,8 +144,8 @@ body {
 .section-playlist__content .section-playlist__button {
   display: flex;
   justify-content: center;
-  background-color: #fff;
-  color: #000;
+  background-color: var(--color-white);
+  color: var(--color-black);
   border-radius: 20px;
   font-size: 12px;
   font-weight: 700;
@@ -160,7 +158,7 @@ body {
 }
 
 .section-playlist__content .section-playlist__button:hover {
-  background-color: #b3b3b3;
+  background-color: var(--font-gray);
 }
 
 .library .cookies {
@@ -168,14 +166,14 @@ body {
 }
 
 .library .cookies a {
-  color: #b3b3b3;
+  color: var(--font-gray);
   font-weight: 500;
   font-size: 10px;
   text-decoration: none;
 }
 
 .library .cookies a:hover {
-  color: #fff;
+  color: var(--color-white);
   text-decoration: underline;
 }
 
@@ -183,7 +181,7 @@ body {
   background-color: transparent;
   border: 1px solid #878787;
   border-radius: 8px;
-  color: #fff;
+  color: var(--color-white);
   cursor: pointer;
   align-items: center;
   font-weight: bold;
@@ -194,4 +192,50 @@ body {
 
 .library .languages .languages__button:hover {
   background-color: #878787;
+}
+
+/* FOOTER */
+.disclaimer-premium {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to right, #ae2896, #509bf5);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.disclaimer-premium .text {
+  flex-shrink: 0;
+}
+
+.disclaimer-premium .disclaimer-premium__title {
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.disclaimer-premium .disclaimer-premium__subtitle {
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.disclaimer-premium button {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 30px;
+  border: 0px;
+  border-radius: 40px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.disclaimer-premium button:hover {
+  background-color: #f2f2f2;
 }

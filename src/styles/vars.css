@@ -1,0 +1,12 @@
+:root {
+  /* Fontes */
+  --font-dm-sans: "DM Sans", sans-serif;
+
+  /* Cores */
+  --bg-icon: #131313;
+  --bg-sidebar: #121212;
+  --bg-arrow-color: rgba(0, 0, 07);
+  --color-white: #fff;
+  --color-black: #000;
+  --font-gray: #b3b3b3;
+}
